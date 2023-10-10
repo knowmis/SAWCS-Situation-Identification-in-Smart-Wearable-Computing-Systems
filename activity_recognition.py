@@ -490,7 +490,7 @@ def evaluate_knn_activity(X, y):
     # Add label back per question
 
     # Save the full dataset with predicted values as a CSV file
-    df.to_csv('predicted_dataset_onelebeladded_giuseppe.csv', index=False)
+    df.to_csv('predicted_dataset_onelebeladded.csv', index=False)
     # Print evaluation metrics
     print(f'Accuracy: {mean_accuracy}')
     print(f'Precision: {mean_precision}')
@@ -522,7 +522,7 @@ def evaluate_knn_activity(X, y):
 
 if __name__ == "__main__":
     # Load data
-    df = pd.read_csv('Context_SA+WA_Activity_13+13.csv')
+    df = pd.read_csv('Dataset_Selected_features_SA-WA_ActivityRecognition.csv')
     X = df.iloc[:, :-1]
     y = df.iloc[:, -1]
 
